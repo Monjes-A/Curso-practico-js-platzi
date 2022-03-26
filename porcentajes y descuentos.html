@@ -1,26 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Porcentajes y descuentos</title>
 </head>
+
 <body>
-    <header> <H1>Claculadora de Descuentos</H1></header>
+    <header>
+        <H1>Claculadora de Descuentos</H1>
+    </header>
     <section>
         <h2>calcula el Precio a pagar de tus productos con descuento</h2>
         <form>
             <label for="Precio">¿Cuanto cuesta el Producto?</label>
             <input id="Precio" type="number">
-            <label for="Descuento">¿De cuanto es el Descuento?</label>
-            <input id="Descuento" type="number">
-            <button type="button" onclick="CalcularDescuento()">
+            <label for="InputCoupon">Escribe el cupón de descuento para tu producto:</label>
+            <input id="InputCoupon" type="text" />
+            <button type="button" onclick="onClickButtonPriceDiscount()">
                 calcular
             </button>
         </form>
         <p id="ResultadoP"></p>
     </section>
- <script src="Descuentos.js"></script>   
+    <script src="Descuentos.js"></script>
 </body>
+
 </html>
